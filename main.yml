@@ -23,8 +23,8 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -t flask-devops-demo .
+        sudo docker build -t flask-devops-demo .
 
     - name: Run Docker Container
       run: |
-        docker run -d -p 5000:5000 flask-devops-demo
+        sudo docker run -d -p 5000:5000 flask-devops-demo
