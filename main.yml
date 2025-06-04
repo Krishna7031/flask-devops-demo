@@ -23,7 +23,7 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -t flask-devops-demo
+        docker build -t flask-devops-demo .
 
     - name: Run Docker Container
       run: |
